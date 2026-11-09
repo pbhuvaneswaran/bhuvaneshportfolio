@@ -13,8 +13,8 @@ Prompts are logged verbatim in `PROMPTS.md`.
 ## 2. Links
 | What | Where |
 |---|---|
-| Live site (production) | https://bhuvanesh-portfolio-eta-taupe.vercel.app |
-| Other production alias | https://bhuvanesh-portfolio-bhuvan-s-project.vercel.app |
+| Live site (production) | https://pbhuvanesh-portfolio.vercel.app |
+| Other aliases (team-protected, 302) | https://bhuvanesh-portfolio-bhuvan-s-project.vercel.app, https://bhuvanesh-portfolio-git-main-bhuvan-s-project.vercel.app |
 | GitHub repo (**public**) | https://github.com/pbhuvaneswaran/bhuvaneshportfolio |
 | Vercel | team `bhuvan-s-project`, project `bhuvanesh-portfolio`, CLI user `pbhuvanesh25-5156` |
 | Local preview | `python3 -m http.server 3000`, then http://127.0.0.1:3000 |
@@ -23,7 +23,8 @@ Prompts are logged verbatim in `PROMPTS.md`.
 
 Notes:
 - `https://bhuvanesh-portfolio.vercel.app` is **someone else's** project. Don't link to it.
-- Per-deployment URLs (`bhuvanesh-portfolio-<hash>-bhuvan-s-project.vercel.app`) return 302 because Vercel protects deployments by default. Use the production aliases above.
+- Per-deployment URLs (`bhuvanesh-portfolio-<hash>-bhuvan-s-project.vercel.app`) return 302 because Vercel protects deployments by default. Use the live site URL above.
+- The first production URL, `bhuvanesh-portfolio-eta-taupe.vercel.app`, is **gone** (DEPLOYMENT_NOT_FOUND). Production moved to `pbhuvanesh-portfolio.vercel.app` around when GitHub was connected.
 
 ## 3. Owner profile (facts used on the site)
 LinkedIn blocks automated reads (HTTP 999), so these come from public search results, gathered 2026-11-09.
@@ -121,7 +122,7 @@ PROMPTS.md            verbatim prompt log (auto-appended by hook)
 - [ ] Confirm the four "likely" Hiver bylines; remove any that aren't his.
 - [ ] Confirm or replace the toolkit list and the ghostwriting and landing-page services.
 - [ ] Paste LinkedIn About, Experience and recommendations so we can add real dates, results and testimonials.
-- [ ] Rename the Vercel project or add a custom domain (current URL is random).
+- [ ] Optional: add a custom domain (production is currently `pbhuvanesh-portfolio.vercel.app`).
 - [ ] Decide whether the GitHub repo should stay public (`PROMPTS.md` and the docs are visible there).
 - [ ] The "take ui components and buttons from here" link was never sent. Ask for it if it still matters.
 
@@ -139,3 +140,4 @@ PROMPTS.md            verbatim prompt log (auto-appended by hook)
 - `git init`, first commit, and local server on :3000.
 - Deployed to Vercel production. Pushed to GitHub over SSH. Bhuvanesh connected the GitHub repo in the Vercel dashboard, so pushes to `main` now auto-deploy.
 - Added `CLAUDE.md`, `PROJECT.md`, `PROMPTS.md`, the prompt-logging hook, `.vercelignore` and the reference images.
+- First Git-triggered production deploy succeeded (commit 4a873a5). Verified that docs and tooling return 404 on the live site.
