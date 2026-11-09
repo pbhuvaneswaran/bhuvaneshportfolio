@@ -1,0 +1,7 @@
+# Project notes and tooling live in git but are never published on the site.
+CLAUDE.md
+PROJECT.md
+PROMPTS.md
+docs
+.claude
+.env*
